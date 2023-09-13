@@ -35,7 +35,7 @@ See [problemsets.md](problemsets.md).
 
 ## Lectures
 
-   **Paul**
+**Paul**
 
 1. **September 6**: Environment and Introduction to Julia
     - Environment: read one or both of these on your own and install Julia, IJulia, and VSCode, preferrably before the first class
@@ -44,17 +44,23 @@ See [problemsets.md](problemsets.md).
     - In class: Motivating econometric examples
     - Self-study: [Introductory Examples](https://quantecon.github.io/lecture-julia.myst/getting_started_julia/julia_by_example.html)
 2. **September 11**: From Economic Models to Code
-   - In class: Comparing ways to implement some of the motivating examples
-   -  Self-study: [Julia Essentials](https://quantecon.github.io/lecture-julia.myst/getting_started_julia/julia_essentials.html)
-   -  Self-study: [Fundamental Types](https://quantecon.github.io/lecture-julia.myst/getting_started_julia/fundamental_types.html)
+   - In class: [Implementing random coefficient demand \& numeric integration methods](https://github.com/ubcecon/ECON622_BLP.jl/blob/main/docs/blp.jmd)
+   - Self-study: [Julia Essentials](https://quantecon.github.io/lecture-julia.myst/getting_started_julia/julia_essentials.html)
+   - Self-study: [Fundamental Types](https://quantecon.github.io/lecture-julia.myst/getting_started_julia/fundamental_types.html)
 3. **September 13**: Optimization
+   - In class: discussion of types and using them to [reorganize numeric integration code from last time](https://github.com/ubcecon/ECON622_BLP.jl/blob/main/src/integrate.jl) and [testing them](https://github.com/ubcecon/ECON622_BLP.jl/blob/main/test/runtests.jl)
    - [Optimization algorithms](https://schrimpf.github.io/AnimatedOptimization.jl/optimization/)
    - [Optimization packages](https://quantecon.github.io/lecture-julia.myst/more_julia/optimization_solver_packages.html#Optimization)
    - Self-study: [Generic Programming](https://quantecon.github.io/lecture-julia.myst/more_julia/generic_programming.html)
    - Self-study: [Linear Algebra](https://quantecon.github.io/lecture-julia.myst/tools_and_techniques/linear_algebra.html)
 4. **September 18**: Automatic Differentiation
-    - [Intro to AD](https://quantecon.github.io/lecture-julia.myst/more_julia/optimization_solver_packages.html#Introduction-to-Automatic-Differentiation)
-    and [Differentiation for Hackers](https://github.com/MikeInnes/diff-zoo)
+   - In class: TBA
+   - Self-study: [Intro to AD](https://quantecon.github.io/lecture-julia.myst/more_julia/optimization_solver_packages.html#Introduction-to-Automatic-Differentiation)
+   - Self-study: [Differentiation for Hackers](https://github.com/MikeInnes/diff-zoo)
+   - Self-study: [Engineering Trade-Offs in Automatic Differentiation: from TensorFlow and PyTorch to Jax and Julia](http://www.stochasticlifestyle.com/engineering-trade-offs-in-automatic-differentiation-from-tensorflow-and-pytorch-to-jax-and-julia/)
+   - Optional:
+      - [Understanding automatic differentiation (in Julia)](https://www.youtube.com/watch?v=UqymrMG-Qi4)
+      - [Forward and Reverse Automatic Differentiation In A Nutshell](https://rawcdn.githack.com/mitmath/matrixcalc/e90417f46a20bec6d9c743c6b7bf5b178e77913a/automatic_differentiation_done_quick.html)
 5. **Sepember 20**: Extremum Estimation
    - [Extremum estimation](https://schrimpf.github.io/GMMInference.jl/extremumEstimation/) and [inference](https://schrimpf.github.io/GMMInference.jl/identificationRobustInference/)
    - [Empirical likelihood](https://schrimpf.github.io/GMMInference.jl/empiricalLikelihood/)
@@ -71,7 +77,7 @@ See [problemsets.md](problemsets.md).
    - Self-study: [Need for speed](https://julia.quantecon.org/software_engineering/need_for_speed.html
    - Self-study: [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/)
 
-**JESSE** 
+**JESSE**
 
 8. **October 4th**: Iterative and matrix-free methods, pre-conditioning and regularization
    - Large-scale linear least squares and eigenvalue problems
@@ -79,7 +85,7 @@ See [problemsets.md](problemsets.md).
    - [Iterative Methods](https://julia.quantecon.org/tools_and_techniques/iterative_methods_sparsity.html)
    - [Numerical Linear Algebra](https://julia.quantecon.org/tools_and_techniques/numerical_linear_algebra.html) applying generic programming
    - Assignment in prep for ECON628 two-way fixed effects
-9.  **October 11**: Introduction to Pytorch, JAX, and "ML Devops"  
+9.  **October 11**: Introduction to Pytorch, JAX, and "ML Devops"
 10. **October 12**: Reverse-mode and forward-mode AD.  Differentiable everything!
     - Implicit differentiation of systems of ODEs, linear systems, etc.
     - Differentiable ODEs/SDEs in JAX and Julia
@@ -95,15 +101,15 @@ See [problemsets.md](problemsets.md).
 
 **PHIL**
 
-16.  **November 1** Uncertainty Quantification (UQ), The unreasonable (in)effectiveness of Monte-Carlo
+16.  **November 1** NLP, Attention/Transformers, Tuning Foundation Models
 17.  **November 6** GUEST LECTURE [GEOFF PLEISS](https://geoffpleiss.com/) FROM UBC STATS
-18. **November 8** Linear dynamical systems, Linear Quadratic (LQ) control (theory and computation)
-19. **November 10** Nonlinear systems, Stability
-20. **November 20** [Dynamic discrete choice](https://github.com/UBCECON567/DynamicDiscreteChoice.jl), Nested fixed-point, Heterogeneity and finite mixture models (E-M algorithm)
-21. **November 22** Dynamic games, Robust LQ (theory and computation)
-22. **November 27** Discrete dynamic games, Estimation by Conditional Choice Probabilities
-23. **November 29** Networks I - Graph theory, Graph spectrum, Network games
-24. **December 4** Networks II - Endogenous networks, Exponential family (Ising) models, Homophily, Embeddings, Graph Neural Networks
+18. **November 8** Uncertainty Quantification (UQ) and the Unreasonable Effectiveness of Monte-Carlo
+19. **November 10** ODEs; Linear dynamical systems, Linear Quadratic (LQ) Control, Nonlinear systems, Stability
+20. **November 20** [Dynamic discrete choice](https://github.com/UBCECON567/DynamicDiscreteChoice.jl), Nested fixed-point, Heterogeneity and mixture models (E-M algorithm)
+21. **November 22** Discrete dynamic games, Conditional Choice Probabilities Estimation
+22. **November 27** Graph theory, Graph spectrum, Network games
+23. **November 29** Graphical models in machine learning
+24. **December 4** Network econometrics, Exponential family (Ising) models, Homophily, Embeddings, Graph Neural Networks
 25. **December 6** Variational inference for network models, Mean-field approximations, Graphons and limit games
 
 26. **Decemeber 20**
